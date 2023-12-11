@@ -1,0 +1,38 @@
+<h2 class="text-center " style="color: rgb(0, 89, 255); font-weight: bold;">Créer un nouveau compte</h2>
+<form (ngSubmit)="onSubmit()">
+<div class="form-group">
+
+  <div class="container">
+    <div class="row justify-content-center mt-5">
+      <div class="col-md-6">
+        <div class="card border-dark">
+          <div class="card-body">
+            <form (ngSubmit)="onSubmit()">
+              <div class="form-group">
+                <!-- Ajoutez ici les champs de formulaire nécessaires -->
+                <label style="color: rgba(28, 64, 74, 0.763); font-weight: bold;">NomClient</label>
+                <input type="text" class="form-control" id="nomClient" [(ngModel)]="compte.nomClient" name="nomClient">
+
+                <label style="color: rgba(28, 64, 74, 0.763); font-weight: bold;">PrenomClient</label>
+                <input type="text" class="form-control" id="prenomClient" [(ngModel)]="compte.prenomClient" name="prenomClient">
+
+                <label style="color: rgba(28, 64, 74, 0.763); font-weight: bold;">AdresseClient</label>
+                <input type="text" class="form-control" id="adresseClient" [(ngModel)]="compte.adresseClient" name="adresseClient">
+
+                <label style="color: rgba(28, 64, 74, 0.763); font-weight: bold;">Solde</label>
+                <input type="text" class="form-control" id="solde" [(ngModel)]="compte.solde" name="solde">
+
+                <label style="color: rgba(28, 64, 74, 0.763); font-weight: bold;">Rib</label>
+                <input type="text" class="form-control" id="rib" [(ngModel)]="compte.rib" name="rib">
+              </div>
+
+              <!-- Ajoutez ici le bouton de soumission du formulaire -->
+              <button type="submit" class="btn btn-info mt-2 btn-block">Ajouter</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</form>

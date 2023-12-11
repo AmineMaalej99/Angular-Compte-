@@ -1,0 +1,65 @@
+/* login.component.css */
+
+.wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+#formContent {
+  background: #f6f6f6;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 300px;
+  text-align: center;
+}
+
+.alert {
+  margin-bottom: 15px;
+}
+
+/* Styles for the login form */
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+input {
+  margin: 10px 0;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 100%;
+}
+
+input[type="submit"] {
+  background-color: #4caf50;
+  color: white;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: #45a049;
+}
+
+/* Add additional styling as needed */
+/* login.component.css */
+
+/* Ajoutez ces styles pour styliser le bouton */
+button.fadeIn.fourth {
+  background-color: #4caf50; /* Couleur de fond */
+  color: white; /* Couleur du texte */
+  padding: 10px 20px; /* Remplissage intérieur du bouton */
+  font-size: 16px; /* Taille de la police */
+  border: none; /* Supprimer la bordure */
+  cursor: pointer; /* Curseur pointeur au survol */
+  border-radius: 5px; /* Coins arrondis */
+}
+
+/* Ajoutez ces styles pour styliser le bouton au survol */
+button.fadeIn.fourth:hover {
+  background-color: #45a049; /* Couleur de fond au survol */
+}
+

@@ -1,1 +1,19 @@
 /* You can add global styles to this file, and also import other style files */
+@import "~bootstrap/dist/css/bootstrap.min.css";
+
+.navbar-custom .nav-link {
+  color: black !important; /* Utilisez !important pour vous assurer que la couleur est appliquée */
+}
+
+.navbar-custom .navbar-toggler-icon {
+  background-color: black; /* Si vous souhaitez également changer la couleur de l'icône du bouton de basculement */
+}
+body {
+  margin-bottom: 70px; /* Ajustez la marge en fonction de la hauteur de votre footer */
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}

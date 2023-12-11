@@ -1,0 +1,39 @@
+
+<div class="container mt-3">
+  <h2 class="text-center" style="color: red; font-weight: bold;">Liste des Comptes</h2>
+
+
+  <!-- Tableau pour afficher la liste des employés -->
+  <table class="table smoke-table">
+    <thead>
+      <tr>
+        <th style="color: blue;">ID</th>
+        <th style="color: blue;">NomClient</th>
+        <th style="color: blue;">PrenomClient</th>
+        <th style="color: blue;">AdresseClient</th>
+        <th style="color: blue;">Solde</th>
+        <th style="color: blue;">Rib</th>
+        <th style="color: blue;">Action</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let compte of comptes">
+        <td>{{ compte.id }}</td>
+        <td>{{ compte.nomClient}}</td>
+        <td>{{compte.prenomClient }}</td>
+        <td>{{ compte.adresseClient }}</td>
+        <td>{{ compte.solde }}</td>
+        <td>{{ compte.rib}}</td>
+        <td>
+          <button (click) = "updateCompte(compte.id)" class="btn btn-primary">Modifier</button>
+          <button (click) = "deleteCompte(compte.id)" class="btn btn-danger" style="margin-left: 10px">Supprimer</button>
+
+        </td>
+
+      </tr>
+    </tbody>
+
+  </table>
+</div>
+
+
